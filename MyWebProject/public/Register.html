@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+	<title>Login here</title>
+	<link rel="stylesheet" href="Login.css">
+</head>
+	
+	
+	<body >
+		
+		<script src="Validation.js">
+		</script>
+		
+		<h1>My Airlines</h1>
+		<hr>
+		<h2>Register Here</h2>
+		
+		<form name="form1" action="Login.html">
+	
+		
+		<table style="margin-right: auto; margin-left: auto">
+		
+		
+			<tr>
+				<td> 
+					<label>Enter email</label> 
+				</td>
+				
+				<td> 
+					<input  type=text id="uemail">
+				</td>
+				<td>
+					<span id="emailErr"></span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>Enter birthdate</label>
+				</td>
+				
+				<td>
+				 	<input  type=date     id="udob">
+				</td>
+				<td>
+					<span id="dobErr"></span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>Enter username</label> 
+				</td>
+				
+				<td>
+					<input  type=text     name="uname">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>
+					<label>Enter password</label>
+				</td>
+				<td>
+					 <input  type=password id="upass">
+				</td>
+				<td>
+					<span id="passErr"></span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td> Already Registered? Click <a href="Login.html">Here</a></td>		
+			</tr>
+			
+			<tr>
+				<td> <button type="submit" onclick=" return ValidateEmail() , dobValidate(), CheckPassword()">Register</button> </td>	
+			</tr>
+			
+			<tr>
+				<td>
+						<button style="background-color: red">Clear</button>	
+				</td>
+			</tr>
+		</form>
+			
+		
+		</table>
+		
+	</body>
+
+</html>
